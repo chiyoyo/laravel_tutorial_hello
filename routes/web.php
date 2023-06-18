@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/hw', function () {
-    return 'Hello World!!';
-});
 Route::get('/hello', 'App\Http\Controllers\HelloController@index');
+// 簡単な方法
+// Route::get('/hello', function () {
+//     return 'Hello World!!';
+// });
